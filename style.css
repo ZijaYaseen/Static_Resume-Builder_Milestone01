@@ -197,11 +197,11 @@ button:hover {
 @media (max-width : 768px) {
 
     .header h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .header p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .profile-section {
         width: 100%;
