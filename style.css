@@ -52,7 +52,7 @@ body {
 
 /* Styling for the Profile Section */
 .profile-section {
-    width: 95%;
+    width: 100%;
     text-align: center; /* Center-align text and image */
     padding: 1rem; /* Add padding around the section */
     background-color: #f4f4f4; /* Light background color for the section */
@@ -195,10 +195,26 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width : 768px) {
+
+    .header h1{
+        font-size: 2rem;
+    }
     
+    .header p {
+        font-size: 0.8rem;
+    }
     .profile-section {
-        width: 85%;
-        padding: 1rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .profile-title {
+        font-size: 1rem;
     }
 
     .profile-picture {
@@ -206,21 +222,29 @@ button:hover {
     }
 
     button {
-        width: 50%;
+        width: 40%;
     }
 }
 
 @media (max-width : 480px) {
 
-    .header {
-        font-size: 2rem;
+    .header h1{
+        font-size: 2.5rem;
     }
 
     .profile-section {
-        width: 80%;
+        width: 100%;
         padding: 1rem;
     }
 
+    .profile-name {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    .profile-title{
+        font-size: 0.8rem;
+    }
     .profile-picture {
         width: 200px;
     }
