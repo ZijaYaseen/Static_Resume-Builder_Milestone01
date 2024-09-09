@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    background-color: #01245a;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* Blue theme styling */
+/* Heading Section Styling */
+.header {
+    padding: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto; /* Centered with spacing */
+}
+
+/* Heading Style */
+.header h1 {
+    font-size: 3rem; /* Larger heading */
+    color: #ffffff;
+    font: bold;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+/* Paragraph Style */
+.header p {
+    font-size: 1.3rem; /* Slightly larger for readability */
+    color: #ffffff; /* Matching the theme */
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.5px; /* Better spacing between letters */
+}
+
+
+
+/* Styling for the Profile Section */
+.profile-section {
+    width: 95%;
+    text-align: center; /* Center-align text and image */
+    padding: 1rem; /* Add padding around the section */
+    background-color: #f4f4f4; /* Light background color for the section */
+    border-radius: 0.5rem; /* Rounded corners for the section */
+    border: 1px solid #ddd; /* Border to define the section */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the section horizontally */
+    border: 3px solid blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.profile-picture {
+    width: 200px; /* Adjust the size of the profile picture */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Round the profile picture */
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin-bottom: 1rem; /* Space below the profile picture */
+    border: 3px solid blue; /* Add a blue border */
+}
+
+
+.profile-name {
+    font-size: 2rem; /* Larger font size for the name */
+    color: #333; /* Dark color for the name */
+    margin: 0.5rem 0; /* Margin around the name */
+    margin-bottom: 0;
+}
+
+.profile-title {
+    font-size: 1.25rem; /* Slightly smaller font size for the title */
+    color: #555; /* Slightly lighter color for the title */
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.contact-title {
+    font-size: 1.5rem; /* Font size for contact details heading */
+    color: #333; /* Blue color for consistency */
+    border-bottom: 2px solid #007BFF; /* Blue underline for emphasis */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    font-size: 1rem; /* Font size for contact information */
+    color: #333; /* Dark color for contact information */
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: #007BFF; /* Blue color for email and phone links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+
+.hidden-section {
+    display: none; /* Hide sections initially */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
+
+/* Styling for the Work Experience Section */
+.hidden-section {
+    display: none; /* Initially hidden */
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9; /* Light background for items */
+}
+
+.experience-title {
+    font-size: 1.25rem; /* Adjust based on your theme */
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.experience-detail {
+    font-size: 1rem; 
+    color: #666;
+}
+
+.experience-description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Styling for the Skills Section */
+.skills-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.skill-item {
+    font-size: 1rem; 
+    color: #333;
+    background-color: #f9f9f9; /* Light background for skills */
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem; /* Space between items */
+}
+
+/* Ensure consistency with the section title */
+.section-title {
+    font-size: 1.5rem; 
+    color: #333; /* Blue color for consistency */
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Responsive Styles */
+@media (max-width : 768px) {
+    
+    .profile-section {
+        width: 85%;
+        padding: 1rem;
+    }
+
+    .profile-picture {
+        width: 200px;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+@media (max-width : 480px) {
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .profile-section {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .profile-picture {
+        width: 200px;
+    }
+
+    button {
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
