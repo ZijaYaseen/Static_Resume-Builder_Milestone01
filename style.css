@@ -255,9 +255,10 @@ button:hover {
     }
 
     button {
-        width: 50%;
-        padding: 5px 10px;
+        width: 85%; /* Adjusts the width for smaller mobile screens */
+        padding: 14px 16px; /* Adjust padding to ensure comfortable tap area */
     }
+
 
     h1 {
         font-size: 1.5rem;
